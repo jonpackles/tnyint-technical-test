@@ -7,7 +7,7 @@ Modify the index.html and style.css files in the [designer directory](https://gi
 | ------- | ------ |
 | <img src="layouts/designer/layout_large.jpg" width="800" height="auto" alt="" /> | <img src="layouts/designer/layout_small.jpg" width="auto" alt="" /> |
 
-Use [this Figma file](https://www.figma.com/file/CxLfPKxVJqN6dFIzrVJdX6/TNY-Interactives-Code-Test?node-id=372%3A827) for further specification of the layout requirements. 
+Use the Figma file sent to you in the assignment instructions email for further specification of the layout requirements. 
 
 ### Requirements
 * Must use semantic HTML

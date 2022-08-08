@@ -1,77 +1,47 @@
-body {
-    background-color: #000;
-    color: white;
+/* Fonts */
 
-    /* background-image: url(images/clouds.png), url(images/stars.png), url(images/gradient.png); */
-    background-image: url(images/background.png);
-    background-position: center top;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+@font-face {
+    font-family: "AdobeCaslonPro";
+    src: url("fonts/AdobeCaslonPro-Regular.woff2") format("woff2"),
+         url("fonts/AdobeCaslonPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
-.opener {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    
-}
-
-.opener_display {
-    text-align: center;
-    border: 1.5px solid white;
-    max-width: 420px;
-}
-
-
-.opener_content {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.opener_content > * {
-    margin: 0 0 1.5rem;
-}
-
-
-h1 {
-    font-size: 3rem;
-    font-family: Irvin;
-    font-weight: 400;
-    text-align: center;
-    line-height: 4rem;
-}
-
-h1 span {
-    display: block;
-}
-
-h1 .sml {
-    font-size: 24px ;
-}
-
-h2 {
-    font-family: Adobe Caslon Pro;
+@font-face {
+    font-family: "AdobeCaslonPro";
+    src: url("fonts/AdobeCaslonPro-Italic.woff2") format("woff2"),
+         url("fonts/AdobeCaslonPro-Italic.woff") format("woff");
     font-weight: normal;
     font-style: italic;
 }
 
-h4 {
-    font-family: Irvin;
-    font-size: 12px;
-    text-align: center;
+@font-face {
+    font-family: "IrvinHeading";
+    src: url("fonts/Irvin-Text.woff2") format("woff2"),
+         url("fonts/Irvin-Text.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: "Neutraface";
+    src: url("fonts/NeutrafaceNewYorkerWeb-SemiBold.woff2") format("woff2"),
+         url("fonts/NeutrafaceNewYorkerWeb-SemiBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Breakpoints */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html {
         font-size: 14px;
     }
+
     .intro_body {
-        font-family: Adobe Caslon Pro;
+        font-family: 'AdobeCaslonPro';
         font-weight: 400;
         font-size: 21px;
         line-height: 30px;
@@ -84,15 +54,17 @@ h4 {
         margin: 10rem 0;
     }
 
-    
+
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     html {
         font-size: 16px;
     }
+
     .intro_body {
-        font-family: Adobe Caslon Pro;
+        font-family: 'AdobeCaslonPro';
         font-weight: 400;
         font-size: 28px;
         line-height: 39px;
@@ -108,8 +80,77 @@ h4 {
 
 }
 
-.byline, .timestamp {
-    font-family: Neutraface Text;
+body {
+    background-color: #000;
+    color: white;
+
+    /* background-image: url(images/clouds.png), url(images/stars.png), url(images/gradient.png); */
+    background-image: url(images/background.png);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+
+}
+
+.opener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.opener_display {
+    text-align: center;
+    border: 1.5px solid white;
+    max-width: 420px;
+}
+
+
+.opener_content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.opener_content>* {
+    margin: 0 0 1.5rem;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-family: 'IrvinHeading';
+    font-weight: 400;
+    text-align: center;
+    line-height: 4rem;
+}
+
+h1 span {
+    display: block;
+}
+
+h1 .sml {
+    font-size: 24px;
+}
+
+h2 {
+    font-family: 'AdobeCaslonPro';
+    font-weight: normal;
+    font-style: italic;
+}
+
+h4 {
+    font-family: 'IrvinHeading';
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.byline,
+.timestamp {
+    font-family: "Neutraface";
     font-size: 15px;
     line-height: 15px;
 }
@@ -121,8 +162,8 @@ h4 {
     /* width: 30%; */
 }
 
-.icons > a {
-    margin: 0 10px;    
+.icons>a {
+    margin: 0 10px;
 }
 
 .header {
